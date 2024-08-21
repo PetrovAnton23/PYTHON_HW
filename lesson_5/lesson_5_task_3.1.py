@@ -22,4 +22,4 @@ firefox_delete_buttons = firefox.find_elements(
 print(
     f"Список кнопок Delete: {len(chrome_delete_buttons)}")
 print(
-    f"Список кнопок Delete: {len(firefox_delete_buttons)}")
+    f"Список кнопок Delete: {len(firefox_delete_buttons)}") 
