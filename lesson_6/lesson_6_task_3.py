@@ -15,4 +15,4 @@ try:
 except Exception as ex:
     print(ex)
 finally:
-    driver.quit() 
+    driver.quit()
