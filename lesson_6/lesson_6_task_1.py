@@ -12,7 +12,6 @@ try:
     blue_button = driver.find_element(By.CSS_SELECTOR, "#ajaxButton").click()
     text_from_content = wait.until(EC.visibility_of_element_located(
         (By.CSS_SELECTOR, ".bg-success"))).text
-    sleep(2)
     print(text_from_content)
 
 except Exception as ex:

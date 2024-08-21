@@ -10,7 +10,6 @@ wait = WebDriverWait(driver, 40, 0.1)
 try:
     driver.get("https://bonigarcia.dev/selenium-webdriver-java/loading-images.html")
     wait.until(EC.text_to_be_present_in_element((By.ID, "text"), 'Done!'))
-    sleep(2)
     get_attribute = driver.find_element(By.ID, "award").get_attribute("src")
     print(get_attribute)
 
