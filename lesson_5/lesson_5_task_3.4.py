@@ -9,7 +9,7 @@ driver = webdriver.Chrome()
 try:
     driver.get("http://the-internet.herokuapp.com/entry_ad")
     wait = WebDriverWait(driver, 10)
-    close_button = wait.until(EC.element_to_be_clickable(By.CSS_SELECTOR, ".modal-footer"))
+    close_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".modal-footer")))
     time.sleep(3)
     close_button.click()
     time.sleep(2)
